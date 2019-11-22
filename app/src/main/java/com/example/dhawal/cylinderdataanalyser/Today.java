@@ -35,6 +35,7 @@ public class Today extends Fragment implements DatePickerListener {
         // Inflate the layout for this fragment
 
         View v =inflater.inflate(R.layout.fragment_today, container, false);
+        Toast.makeText(getContext(),"Select Date",Toast.LENGTH_LONG).show();
 
         HorizontalPicker picker = (HorizontalPicker) v.findViewById(R.id.datePicker);
         day = v.findViewById(R.id.day);
